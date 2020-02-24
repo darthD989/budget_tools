@@ -8,6 +8,8 @@ RUN apt-get install -qqy \
     libpq-dev \
     python3=3.6.* 
 
+RUN	apt install -y python3-pip && \ 
+		pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 COPY requirement.txt /app/
 WORKDIR /app
 
