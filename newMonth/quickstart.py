@@ -42,7 +42,7 @@ def main():
     result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                 range=SAMPLE_RANGE_NAME).execute()
     values = result.get('values', [])
-    month = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID).execute()
+#    month = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID).execute()
 
     if not values:
         print('No data found.')
